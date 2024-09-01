@@ -4,7 +4,6 @@ public class Tarefa {
     private String prazo;
     private int prioridade;
 
-    // Construtor
     public Tarefa(String titulo, String descricao, String prazo, int prioridade) {
         this.titulo = titulo;
         this.descricao = descricao;
@@ -12,7 +11,6 @@ public class Tarefa {
         this.prioridade = prioridade;
     }
 
-    // Métodos get e set
     public String getTitulo() {
         return titulo;
     }
@@ -45,7 +43,6 @@ public class Tarefa {
         this.prioridade = prioridade;
     }
 
-    // Método para exibir detalhes da tarefa
     public void exibirDetalhes() {
         System.out.println("Título: " + titulo);
         System.out.println("Descrição: " + descricao);
@@ -54,18 +51,9 @@ public class Tarefa {
     }
 
     public static void main(String[] args) {
-        // Criando uma instância da classe Tarefa
         Tarefa tarefa = new Tarefa("Desafios!", "Exercício POO", "99-99-9999", 1);
-
-        // Modificando o título da tarefa
         tarefa.setTitulo("Atividades Java");
-
-        // Exibindo o novo título
         System.out.println("Novo Título: " + tarefa.getTitulo());
-
-        // Exibindo todos os detalhes da tarefa
         tarefa.exibirDetalhes();
     }
 }
-
-// 04162811
